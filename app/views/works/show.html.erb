@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @work.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @work.content %>
+</p>
+
+<p>
+  <strong>Photo src:</strong>
+  <%= @work.photo_src %>
+</p>
+
+<p>
+  <strong>Making year:</strong>
+  <%= @work.making_year %>
+</p>
+
+<p>
+  <strong>Method:</strong>
+  <%= @work.method %>
+</p>
+
+<p>
+  <strong>Footer:</strong>
+  <%= @work.footer %>
+</p>
+
+<%= link_to 'Edit', edit_work_path(@work) %> |
+<%= link_to 'Back', works_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  content: MyText
+  photo_src: MyString
+  making_year: 1
+  method: MyString
+  footer: MyString
+
+two:
+  title: MyString
+  content: MyText
+  photo_src: MyString
+  making_year: 1
+  method: MyString
+  footer: MyString

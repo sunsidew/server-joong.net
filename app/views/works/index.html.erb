@@ -1,0 +1,35 @@
+<h1>Listing works</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Photo src</th>
+      <th>Making year</th>
+      <th>Method</th>
+      <th>Footer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @works.each do |work| %>
+      <tr>
+        <td><%= work.title %></td>
+        <td><%= work.content %></td>
+        <td><%= work.photo_src %></td>
+        <td><%= work.making_year %></td>
+        <td><%= work.method %></td>
+        <td><%= work.footer %></td>
+        <td><%= link_to 'Show', work %></td>
+        <td><%= link_to 'Edit', edit_work_path(work) %></td>
+        <td><%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Work', new_work_path %>
